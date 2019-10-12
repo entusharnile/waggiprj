@@ -1,0 +1,727 @@
+* {
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	-moz-osx-font-smoothing: grayscale;
+}
+body,
+button,
+input,
+select,
+a {
+	font-family: "Raleway", sans-serif;
+}
+h1 {
+	font-size: 48px !important;
+	line-height: 1;
+	font-family: "Baloo";
+}
+a,
+button {
+	font-weight: bold;
+	font-size: 15px;
+}
+input,
+select {
+	border: 1px solid #e6e6e6 !important;
+	color: #626262;
+	padding: 10px !important;
+	border-radius: 4px !important;
+	font-size: 16px;
+	margin-bottom: 0;
+	outline: none;
+}
+hr {
+	margin: 20px 0 10px 0;
+	background-color: #e6e6e6;
+	height: 1px;
+}
+span,
+.login-page .level-left {
+	font-weight: 100;
+	font-size: 16px;
+	margin-bottom: 0;
+}
+.sidebar {
+	display: inline-flex;
+	flex-direction: column;
+	width: 20%;
+}
+.custom-container {
+	width: 80%;
+	padding-left: 10px;
+	float: right;
+}
+.main-content {
+	max-width: 100%;
+}
+.button.is-primary,
+.button.is-primary[disabled],
+.button.is-primary:hover .button.is-danger,
+.button.is-danger:hover,
+.button.is-danger:active,
+.button.is-danger.is-active {
+	color: #fff;
+	background-color: #e02f63 !important;
+}
+.hero-body {
+	z-index: 1;
+}
+.page-header {
+	background-image: url("../images/graphics-desktop.svg");
+	background-size: cover;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	height: 260px;
+	position: relative;
+}
+.is-transparent {
+	background-color: transparent;
+	height: 50px;
+}
+.navbar-item,
+.navbar-brand,
+.menu-list-mobile a:hover {
+	color: #fff;
+}
+.is-transparent .btn-logout {
+	padding: 0 30px;
+	border: 1px solid #fff;
+	border-radius: 5px;
+}
+/*-----------------------------------------------------------*/
+
+/* Common styling for multiple pages starts here*/
+.login-page,
+.signup-page,
+.owner-page,
+.pet-page,
+.tag-page {
+	display: flex;
+	height: 100vh;
+	min-height: 600px;
+	align-items: center;
+	background-color: #e02f63;
+	max-width: 100vw;
+	width: 100vw;
+}
+.square {
+	width: 350px;
+	/*max-width: 350px;*/
+	background-color: #fff;
+	margin: 0 auto;
+	text-align: center;
+	padding: 30px 20px;
+}
+.square input,
+.is-fullwidth,
+.alert-desc,
+.fill-pet-profile .form-details select {
+	width: 100%;
+}
+.dropzone {
+	text-align: center;
+	padding: 23px;
+	border: 2px dashed #e6e6e6;
+	border-radius: 4px;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+.dropzone > div {
+	padding: 23px;
+}
+.render-field {
+	position: relative;
+}
+.render-field span {
+	position: absolute;
+	color: #666666 !important;
+	right: 20px;
+	top: 3px;
+	border: 1px solid #e6e6e6;
+	background-color: #fff;
+	padding: 0 5px;
+	border-radius: 4px;
+}
+/* Common styling for multiple pages ends here*/
+
+/*-----------------------------------------------------------*/
+
+/*Login and signup pages styling starts here*/
+.bottom-or {
+	display: inline-block;
+	margin-top: 10px;
+	width: 100%;
+	padding-bottom: 5px !important;
+}
+.small-dash {
+	float: left;
+	height: 14px;
+	width: 42%;
+	border-bottom: 1px solid #e6e6e6;
+	color: #e6e6e6;
+	padding-bottom: 0 !important;
+}
+.bottom-or span {
+	float: left;
+	padding: 0 5%;
+	color: #e6e6e6;
+}
+.login-page h1,
+.signup-page h1 {
+	padding-bottom: 30px;
+	color: #e02f63;
+}
+.login-page .square form div,
+.signup-page .square form div {
+	padding: 0;
+	padding-bottom: 20px;
+}
+.login-page .has-text-danger,
+.signup-page .has-text-danger {
+	padding-bottom: 10px !important;
+}
+.forget-password-link {
+	padding: 0 !important;
+	padding-top: 10px !important;
+}
+.facebook {
+	background-color: #5388cb !important;
+}
+.login-page a,
+.signup-page a {
+	color: #e02f63;
+}
+.google {
+	background-color: #e94135 !important;
+}
+.facebook,
+.google {
+	padding: 20px 0;
+	color: #fff !important;
+	font-weight: 100 !important;
+	border-radius: 5px;
+	border: none;
+	margin-bottom: 15px;
+}
+.facebook span {
+	margin-right: 15px !important;
+}
+.google span {
+	margin-left: -25px !important;
+	margin-right: 15px !important;
+}
+.login-page .button.is-primary,
+.signup-page .button.is-primary {
+	background-color: #e02f63;
+	padding: 0 30px;
+}
+.login-page .level-left {
+	color: #e02f63 !important;
+}
+.congrats-page .has-text-centered {
+	margin: 0 auto;
+	padding: 30px;
+	border-radius: 3px;
+}
+.congrats-page h1 {
+	color: #e02f63;
+}
+.congrats-page p {
+	color: darkgray;
+	padding: 20px;
+}
+.congrats-page button {
+	background-color: #e02f63;
+	padding: 10px 40px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	color: #fff;
+}
+.login-page .render-field span,
+.signup-page .render-field span {
+	top: -9px !important;
+}
+/* Login and signup pages styling ends here*/
+
+/*-----------------------------------------------------------*/
+
+/* Registration page styling starts here */
+.fill-owner-profile {
+	max-width: 375px;
+	width: auto;
+}
+.fill-pet-profile {
+	max-width: 650px;
+	width: inherit;
+}
+.fill-profile .dropzone {
+	display: none;
+}
+.fill-profile h1 {
+	padding-bottom: 10px;
+	color: #e02f63;
+}
+.fill-tag button {
+	margin: 10px !important;
+}
+.fill-profile .columns {
+	margin: 0;
+	display: block;
+}
+.fill-pet-profile .columns {
+	display: flex;
+}
+.fill-profile .upload-file {
+	margin: 10px 0;
+}
+.form-details div input {
+	width: 100%;
+	min-width: auto;
+}
+.fill-profile .columns .column {
+	padding: 10px 0;
+}
+.fill-pet-profile .columns .column {
+	padding: 10px;
+}
+.fill-pet-profile .form-pet-gender,
+.fill-pet-profile .pet-desc {
+	padding: 0 10px;
+}
+.fill-profile .button,
+.fill-profile .button:hover,
+.fill-profile .form-details .button.is-fullwidth {
+	width: 100px;
+	margin: 0 auto;
+}
+.fill-owner-profile .form-details .columns .column span,
+form div span {
+	float: left;
+	color: #e02f63;
+	font-size: 12px;
+}
+.square .render-field span {
+	right: 5px;
+	top: 0;
+}
+/* Registration page styling ends here*/
+
+/*-----------------------------------------------------------*/
+
+/* Home page styling starts here */
+.page-header {
+	background-image: url("../images/graphics-desktop.svg");
+	background-size: cover;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	height: 260px;
+	position: relative;
+}
+.brand-logo-header:hover {
+	//margin-top: 10px;
+	-webkit-transform: rotate(-20deg);
+	transform: rotate(-20deg);
+	-webkit-transition: -webkit-transform 0.3s ease-in-out;
+	transition: transform 0.3s ease-in-out;
+}
+.brand-logo-header img {
+	max-height: 60px;
+	width: 60px;
+}
+.navbar-menu.is-active,
+.must-login-display,
+.congrats-page {
+	background-color: #e02f63;
+}
+.hero-body {
+	z-index: 1;
+}
+.login-page .password-set {
+	width: auto;
+}
+.login-page .password-set button {
+	margin-bottom: 10px;
+}
+/* Home page styling ends here */
+
+/*-----------------------------------------------------------*/
+
+/* Edit page styling starts here */
+.edit-details .owner-page,
+.edit-details .pet-page,
+.edit-details .tag-page {
+	height: auto;
+	min-height: auto;
+	width: auto;
+	background-color: transparent;
+}
+.edit-details {
+	width: 100vw;
+	margin: 0 auto;
+	position: absolute;
+}
+.edit-root {
+	width: 750px;
+	margin: 0 auto;
+	position: relative;
+	margin-top: 40px;
+}
+.pet-desc .column {
+	padding: 15px 0;
+}
+.edit-details .foot-prints {
+	display: none;
+}
+.edit-details .sidebar {
+	display: inline-flex;
+	flex-direction: column;
+	width: 30%;
+	padding-right: 5%;
+}
+.edit-details .sidebar a {
+	color: #929292;
+}
+.edit-details .custom-container {
+	width: 70%;
+	padding-left: 5%;
+	float: right;
+	border-left: 1px solid #e6e6e6;
+}
+.edit-details .columns.alert-page {
+	margin: 0;
+	margin-bottom: 15px;
+	border: 1px solid #e6e6e6;
+}
+.single-alert {
+	margin: 20px 0;
+	border: 1px solid #e6e6e6;
+}
+.edit-root li {
+	border-top: 1px solid #e6e6e6;
+	padding: 5px 0;
+}
+.edit-root li a {
+	padding: auto 0 !important;
+}
+.edit-root li:first-child {
+	border-top: none;
+	padding-top: 0;
+}
+.root-heading-text {
+	width: 100%;
+	margin: 0 auto;
+	position: absolute;
+}
+.edit-details .owner-page,
+.edit-details .pet-page,
+.edit-details .tag-page {
+	height: auto;
+	min-height: auto;
+	width: auto;
+	background-color: transparent;
+}
+.edit-details h1 {
+	color: #fff;
+	position: relative;
+	bottom: 160px;
+}
+.edit-details-menu li {
+	padding-bottom: 5px;
+}
+.edit-root.is-ancestor {
+	margin: 70px auto !important;
+}
+.owner-image,
+.pet-image {
+	position: absolute;
+	text-align: center;
+	top: -150px;
+	width: 100%;
+	left: 0;
+}
+.owner-image img,
+.pet-image img {
+	border-radius: 50%;
+	box-shadow: 0 0 2px 0 #002c00;
+	border: 3px solid #fff;
+	width: 100px;
+	height: 100px;
+}
+.edit-details-menu li .fa {
+	padding: 5px;
+}
+.upload-file {
+	margin: 0;
+	border: 1px dashed #e6e6e6;
+}
+.upload-file > div {
+	padding: 15px;
+	width: 100%;
+}
+.form-details select {
+	margin-bottom: 0;
+	min-width: 100%;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	cursor: pointer;
+}
+.form-pet-gender,
+.form-pet-gender > div {
+	padding: 0;
+}
+.form-pet-gender > div {
+	border-bottom: 1px solid #e6e6e6;
+	padding-bottom: 10px;
+}
+.form-pet-gender label {
+	padding: 15px;
+}
+.form-details .control {
+	font-size: small;
+}
+.form-details .select {
+	height: auto;
+	width: 100%;
+}
+.form-pet-gender label input {
+	min-width: auto;
+	width: auto;
+	padding-top: 10px;
+}
+.form-details .select select {
+	margin: 0;
+	padding: 8px !important;
+	width: 100%;
+}
+.userprofile-button button {
+	height: 40px;
+	border-radius: 8px;
+}
+.menu-list a.is-active {
+	background-color: transparent;
+	color: #e02f63;
+}
+.edit-details .tag-page span {
+	float: none;
+	padding-left: 10px;
+}
+.edit-details .tag-page .column {
+	margin-top: 10px;
+	padding-bottom: 0;
+}
+.renewsub-page .renew-block {
+	width: 50%;
+	float: left;
+}
+.renewsub-page span {
+	width: 100%;
+}
+
+.renewsub-page .button {
+	margin-top: 15px;
+}
+.renewsub-page .renew-block input {
+	min-width: auto;
+	width: auto;
+	margin-right: 20px !important;
+}
+
+/* Edit page styling ends here */
+
+/*-----------------------------------------------------------*/
+
+/*Flatpickr styling starts here*/
+.flatpickr-months .flatpickr-month {
+	height: 40px !important;
+	background: #e02f63 !important;
+}
+.flatpickr-current-month {
+	padding: 0 !important;
+}
+.flatpickr-months .flatpickr-prev-month,
+.flatpickr-months .flatpickr-next-month {
+	height: 40px !important;
+	padding: 13px !important;
+}
+.flatpickr-weekdays,
+span.flatpickr-weekday {
+	background: #fff !important;
+}
+span.flatpickr-weekday {
+	color: #e02f63 !important;
+}
+.flatpickr-months .flatpickr-prev-month:hover svg,
+.flatpickr-months .flatpickr-prev-month svg,
+.flatpickr-months .flatpickr-next-month:hover svg,
+.flatpickr-months .flatpickr-next-month svg {
+	fill: #fff !important;
+}
+.flatpickr-current-month input.cur-year {
+	border: none !important;
+}
+.flatpickr-day.today {
+	border-color: #e6e6e6 !important;
+	background-color: #ff3860 !important;
+	color: #fff !important;
+}
+.flatpickr-day {
+	border: 1px solid #e6e6e6 !important;
+	border-radius: 5px !important;
+	margin: 2px 0 !important;
+}
+/*Flatpickr styling ends here*/
+.nav_1 {
+	display: none;
+}
+.menu-list-mobile {
+	height: 100%;
+	width: 100%;
+	display: none !important;
+	position: absolute;
+	top: -40px;
+	left: 0;
+	background-color: black;
+	overflow-x: hidden;
+	transition: 0.5s;
+	z-index: 999;
+}
+.menu-list-mobile a {
+	padding-left: 40px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #fff;
+	transition: 0.3s;
+}
+.menu-list-mobile .closebtn {
+	font-size: 36px;
+	top: -6px;
+	z-index: 10;
+}
+@media only screen and (max-width: 1087px) {
+	.is-transparent .navbar-brand {
+		width: 100%;
+		display: inline-block;
+	}
+	.is-transparent .navbar-brand .navbar-item {
+		float: left;
+	}
+	.is-transparent .navbar-brand .navbar-burger {
+		float: right;
+	}
+}
+@media only screen and (max-width: 767px) {
+	h1 {
+		font-size: 32px !important;
+	}
+	.column {
+		padding: 10px 0;
+	}
+	.page-header {
+		background-image: url("../images/graphics-mobile.svg");
+		height: 360px;
+	}
+	.square {
+		max-width: 400px;
+		padding: 20px;
+		width: 90%;
+	}
+	.congrats-page .has-text-centered {
+		width: 90%;
+		max-width: 420px;
+		padding: 15px;
+	}
+	.congrats-page p {
+		padding: 10px;
+	}
+	.pet-page {
+		min-height: 900px;
+	}
+	.is-transparent .navbar-brand {
+		width: 100%;
+		display: inline-block;
+	}
+	.is-transparent .navbar-brand .navbar-item {
+		float: left;
+	}
+	.is-transparent .navbar-brand .navbar-burger {
+		float: right;
+	}
+	.edit-root .edit-details,
+	.fill-profile .form-details .button.is-fullwidth,
+	.flatpickr-input {
+		width: 100% !important;
+	}
+	.edit-details .sidebar {
+		width: 100%;
+		padding-right: 0;
+	}
+	.nav_1 {
+		float: left;
+		display: block;
+		padding-left: 5%;
+		font-size: 30px;
+		cursor: pointer;
+		position: absolute;
+		left: 10px;
+		top: -30px;
+	}
+	.menu-list {
+		height: 0;
+		overflow-y: hidden;
+		transition: height 0.5s ease;
+	}
+	.is-expanded {
+		height: max-content;
+	}
+	.menu-list-mobile,
+	.form-details,
+	.fill-pet-profile .columns {
+		display: block !important;
+	}
+	.box.single-alert {
+		margin: 10px 0 !important;
+	}
+	.edit-details .custom-container {
+		width: 90%;
+		padding-left: 0;
+		float: none;
+		margin: 0 auto;
+		border-left: none;
+		min-height: 200px;
+	}
+	.form-details div {
+		width: 100%;
+		margin: 0;
+	}
+	.edit-root {
+		width: 90%;
+	}
+	.fill-profile .userprofile-button-submit {
+		margin-left: 0 !important;
+	}
+	.owner-image,
+	.pet-image {
+		left: 0;
+	}
+	.columns {
+		margin-top: 0;
+	}
+	.columns:not(last-child),
+	.form-details div:nth-child(even) {
+		margin-bottom: 0 !important;
+	}
+	.renewsub-page .renew-block {
+		width: 100%;
+		margin-top: 20px;
+	}
+}
+@media only screen and (max-width: 412px) {
+	.page-header {
+		background-image: url("../images/graphics-mobile.svg");
+		height: 260px;
+	}
+}

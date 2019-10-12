@@ -1,0 +1,47 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": {
+    "/auth/*": {
+      "target": "http://localhost:4000"
+    },
+    "/api/*": {
+      "target": "http://localhost:4000"
+    },
+    "/api/subscriptions/*": {
+      "target": "http://localhost:4000"
+    }
+  },
+  "dependencies": {
+    "ajv": "^6.5.0",
+    "axios": "^0.18.0",
+    "bulma": "^0.7.1",
+    "materialize-css": "^0.100.2",
+    "node-sass-chokidar": "^1.3.0",
+    "npm-run-all": "^4.1.3",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-dropzone": "^4.2.9",
+    "react-flatpickr": "^3.6.4",
+    "react-hot-loader": "3.0.0-beta.2",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.2.2",
+    "react-s-alert": "^1.4.1",
+    "react-scripts": "1.1.1",
+    "react-stripe-checkout": "^2.6.3",
+    "redux": "^3.7.2",
+    "redux-form": "^7.3.0",
+    "redux-thunk": "^2.2.0"
+  },
+  "scripts": {
+    "start-js": "react-scripts start",
+    "build-js": "react-scripts build",
+    "start": "npm-run-all -p watch-css start-js",
+    "build": "npm-run-all build-css build-js",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "build-css": "node-sass-chokidar src/styles/main.scss src/styles/main.css",
+    "watch-css": "npm run build-css && node-sass-chokidar src/styles/main.scss src/styles/main.css --watch --recursive"
+  }
+}

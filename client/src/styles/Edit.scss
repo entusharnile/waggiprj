@@ -1,0 +1,59 @@
+.s-alert-box {
+	padding: 10px 60px !important;
+	border-radius: 4px !important;
+}
+.s-alert-close {
+	display: none !important;
+}
+h2 {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+.lost-pet {
+	top: 0;
+	padding-top: 80px;
+	background-image: url("../images/graphics-desktop.svg");
+	background-size: cover;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	height: 260px;
+	position: absolute;
+}
+.lost-pet-container {
+	max-width: 600px;
+	margin: 0px auto;
+	padding: 0px 40px;
+}
+.lost-pet-margin {
+	margin-top: 180px;
+}
+.lost-pet i {
+	max-width: 30px;
+}
+.lost-pet .column a {
+	display: flex;
+	align-items: center;
+}
+.lost-pet textarea {
+	width: 100%;
+}
+.is-primary-color {
+	color: #e02f63;
+}
+.lost-pet .pet-image {
+	top: 180px;
+}
+
+@media only screen and (max-width: 500px) {
+	.lost-pet {
+		padding-top: 55px;
+	}
+}
+.lost-pet-page .navbar {
+	max-width: 960px;
+	margin: 0px auto;
+}
+.navbar-brand {
+	margin-top: 10px;
+}
